@@ -1,0 +1,43 @@
+<odoo>
+    <!-- Vista de lista (tree) -->
+    <record id="view_campana_tree" model="ir.ui.view">
+        <field name="name">igb_barrasa_system.campana.tree</field>
+        <field name="model">igb_barrasa_system.campana</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="fecha_creacion"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista de formulario (form) -->
+    <record id="view_campana_form" model="ir.ui.view">
+        <field name="name">igb_barrasa_system.campana.form</field>
+        <field name="model">igb_barrasa_system.campana</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="imagen" widget="image"/>
+                        <field name="fecha_creacion"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción de la vista de campañas -->
+    <record id="action_campana" model="ir.actions.act_window">
+        <field name="name">Campañas</field>
+        <field name="res_model">igb_barrasa_system.campana</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menús -->
+    <menuitem id="menu_campana_root" name="Campañas" sequence="1" groups="igb_barrasa_system_user"/>
+
+    <menuitem id="menu_campana" parent="menu_campana_root" name="Gestión de Campañas"
+        sequence="2" action="igb_barrasa_system.action_campana" groups="igb_barrasa_system_admin"/>
+</odoo>

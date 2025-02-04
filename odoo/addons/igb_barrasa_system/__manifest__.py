@@ -19,8 +19,9 @@ Luego, estos datos pueden vincularse con clientes dentro de Odoo, proporcionando
     'depends': ['base'],
 
     'data': [
-        'views/views.xml',
-        'views/templates.xml',
+        'security/igb_barrasa_system_security.xml',
+        'security/ir.model.access.csv',
+        'views/campana_views.xml',
     ],
 
     'demo': [
