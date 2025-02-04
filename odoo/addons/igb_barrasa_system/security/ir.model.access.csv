@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_campana_admin,igb_barrasa_system.campana_admin,model_igb_barrasa_system_campana,igb_barrasa_system_admin,1,1,1,1
-access_campana_user,igb_barrasa_system.campana_user,model_igb_barrasa_system_campana,igb_barrasa_system_user,1,0,0,0
+access_campana_espia_admin,igb_barrasa_system.campana_espia_admin,model_igb_barrasa_system_campana_espia,igb_barrasa_system_admin,1,1,1,1
+access_campana_espia_user,igb_barrasa_system.campana_espia_user,model_igb_barrasa_system_campana_espia,igb_barrasa_system_user,1,0,0,0
