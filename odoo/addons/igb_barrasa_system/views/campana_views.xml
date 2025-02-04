@@ -5,7 +5,6 @@
         <field name="model">igb_barrasa_system.campana_espia</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="id_espia"/>
                 <field name="nombre"/>
                 <field name="fecha_creacion"/>
             </tree>
@@ -18,8 +17,15 @@
         <field name="model">igb_barrasa_system.campana_espia</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <button name="accion_abrir_modal"
+                        string="Código a Inyectar"
+                        type="object"
+                        class="oe_highlight"/>
+                </header>
                 <sheet>
                     <group>
+                        <field name="id" string="UID" readonly="1"/>
                         <field name="nombre"/>
                         <field name="imagen" widget="image"/>
                         <field name="fecha_creacion"/>
@@ -36,6 +42,6 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Menú principal "Espía Web" -->
+    <!-- Menú principal -->
     <menuitem id="menu_espia_web_root" name="Espía Web" sequence="1" groups="igb_barrasa_system_user" action="igb_barrasa_system.action_campana_espia"/>
 </odoo>

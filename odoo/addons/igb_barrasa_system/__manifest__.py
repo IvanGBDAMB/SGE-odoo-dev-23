@@ -16,7 +16,7 @@ Luego, estos datos pueden vincularse con clientes dentro de Odoo, proporcionando
     'version': '17.0.1.0',
     'license': 'LGPL-3',
 
-    'depends': ['base'],
+    'depends': ['base', 'web'],
 
     'data': [
         'security/igb_barrasa_system_security.xml',
@@ -29,4 +29,12 @@ Luego, estos datos pueden vincularse con clientes dentro de Odoo, proporcionando
     ],
 
     'images': ['static/description/icon.png'],
+
+    'assets': {
+        'web.assets_backend': [
+            'igb_barrasa_system/static/src/js/modal_personalizado.js',
+        ],
+    },
+
+
 }
