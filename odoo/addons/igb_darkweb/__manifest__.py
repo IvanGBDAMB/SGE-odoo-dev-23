@@ -15,6 +15,7 @@
         'views/menu.xml',
         'wizards/fbi_alerta_views.xml',
     ],
+    'images': ['static/description/icon.png'],
     'installable': True,
     'application': True,
 }
