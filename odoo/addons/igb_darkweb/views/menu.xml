@@ -1,8 +1,11 @@
 <odoo>
-    <menuitem id="menu_darkweb" name="Dark Web"/>
+    <menuitem id="menu_darkweb" name="Dark Web" groups="igb_darkweb.group_darkweb_admin,igb_darkweb.group_darkweb_user"/>
 
-    <menuitem id="menu_drogas" name="Drogas" parent="menu_darkweb" action="igb_darkweb.action_drogas"/>
-    <menuitem id="menu_armas" name="Armas" parent="menu_darkweb" action="igb_darkweb.action_armas"/>
-    <menuitem id="menu_sicarios" name="Sicarios" parent="menu_darkweb" action="igb_darkweb.action_sicarios"/>
-    <menuitem id="menu_hackers" name="Hackers" parent="menu_darkweb" action="igb_darkweb.action_hackers"/>
+    <menuitem id="menu_drogas" name="Drogas" parent="menu_darkweb" action="igb_darkweb.action_drogas" groups="igb_darkweb.group_darkweb_admin,igb_darkweb.group_darkweb_user"/>
+
+    <menuitem id="menu_armas" name="Armas" parent="menu_darkweb" action="igb_darkweb.action_armas" groups="igb_darkweb.group_darkweb_admin,igb_darkweb.group_darkweb_user"/>
+
+    <menuitem id="menu_sicarios" name="Sicarios" parent="menu_darkweb" action="igb_darkweb.action_sicarios" groups="igb_darkweb.group_darkweb_admin,igb_darkweb.group_darkweb_user"/>
+
+    <menuitem id="menu_hackers" name="Hackers" parent="menu_darkweb" action="igb_darkweb.action_hackers" groups="igb_darkweb.group_darkweb_admin,igb_darkweb.group_darkweb_user"/>
 </odoo>
