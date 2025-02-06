@@ -1,0 +1,20 @@
+{
+    'name': "Dark Web",
+    'summary': "Compra ilegal de drogas, armas, sicarios y hackers",
+    'author': "Ivan Gonzalez Barrasa",
+    'category': 'Custom',
+    'version': '1.0',
+    'depends': ['base'],
+    'data': [
+        'security/grupos.xml',
+        'security/ir.model.access.csv',
+        'views/drogas_views.xml',
+        'views/armas_views.xml',
+        'views/sicarios_views.xml',
+        'views/hackers_views.xml',
+        'views/menu.xml',
+        'wizards/fbi_alerta_views.xml',
+    ],
+    'installable': True,
+    'application': True,
+}

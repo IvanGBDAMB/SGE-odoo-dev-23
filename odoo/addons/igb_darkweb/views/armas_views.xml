@@ -1,0 +1,37 @@
+<odoo>
+    <record id="action_armas" model="ir.actions.act_window">
+        <field name="name">Armas</field>
+        <field name="res_model">igb_darkweb.arma</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_armas_tree" model="ir.ui.view">
+        <field name="name">armas.tree</field>
+        <field name="model">igb_darkweb.arma</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="precio"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_armas_form" model="ir.ui.view">
+        <field name="name">armas.form</field>
+        <field name="model">igb_darkweb.arma</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="precio"/>
+                        <field name="distribuidor_id"/>
+                    </group>
+                    <footer>
+                        <button name="abrir_alerta_fbi" type="object" string="Comprar" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

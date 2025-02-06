@@ -1,0 +1,37 @@
+<odoo>
+    <record id="action_drogas" model="ir.actions.act_window">
+        <field name="name">Drogas</field>
+        <field name="res_model">igb_darkweb.cocaina</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_drogas_tree" model="ir.ui.view">
+        <field name="name">drogas.tree</field>
+        <field name="model">igb_darkweb.cocaina</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="precio"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_drogas_form" model="ir.ui.view">
+        <field name="name">drogas.form</field>
+        <field name="model">igb_darkweb.cocaina</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="precio"/>
+                        <field name="proveedor_ids"/>
+                    </group>
+                    <footer>
+                        <button name="abrir_alerta_fbi" type="object" string="Comprar" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class igb_barrasa_system(models.Model):
-#     _name = 'igb_barrasa_system.igb_barrasa_system'
-#     _description = 'igb_barrasa_system.igb_barrasa_system'
+# class igb_darkweb(models.Model):
+#     _name = 'igb_darkweb.igb_darkweb'
+#     _description = 'igb_darkweb.igb_darkweb'
 
 #     name = fields.Char()
 #     value = fields.Integer()

@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem id="menu_darkweb" name="Dark Web"/>
+
+    <menuitem id="menu_drogas" name="Drogas" parent="menu_darkweb" action="igb_darkweb.action_drogas"/>
+    <menuitem id="menu_armas" name="Armas" parent="menu_darkweb" action="igb_darkweb.action_armas"/>
+    <menuitem id="menu_sicarios" name="Sicarios" parent="menu_darkweb" action="igb_darkweb.action_sicarios"/>
+    <menuitem id="menu_hackers" name="Hackers" parent="menu_darkweb" action="igb_darkweb.action_hackers"/>
+</odoo>

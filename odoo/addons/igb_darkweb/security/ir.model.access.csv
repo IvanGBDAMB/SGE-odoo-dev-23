@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_drogas_admin,Drogas Admin,model_igb_darkweb_cocaina,igb_darkweb.group_darkweb_admin,1,1,1,1
+access_drogas_user,Drogas User,model_igb_darkweb_cocaina,igb_darkweb.group_darkweb_user,1,0,0,0
+
+access_armas_admin,Armas Admin,model_igb_darkweb_arma,igb_darkweb.group_darkweb_admin,1,1,1,1
+access_armas_user,Armas User,model_igb_darkweb_arma,igb_darkweb.group_darkweb_user,1,0,0,0
+
+access_sicarios_admin,Sicarios Admin,model_igb_darkweb_sicario,igb_darkweb.group_darkweb_admin,1,1,1,1
+access_sicarios_user,Sicarios User,model_igb_darkweb_sicario,igb_darkweb.group_darkweb_user,1,0,0,0
+
+access_hackers_admin,Hackers Admin,model_igb_darkweb_hacker,igb_darkweb.group_darkweb_admin,1,1,1,1
+access_hackers_user,Hackers User,model_igb_darkweb_hacker,igb_darkweb.group_darkweb_user,1,0,0,0

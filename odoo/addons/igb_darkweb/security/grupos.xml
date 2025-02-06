@@ -1,0 +1,17 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- Grupo Admin -->
+        <record id="group_darkweb_admin" model="res.groups">
+            <field name="name">Dark Web Admin</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+
+        <!-- Grupo Usuario -->
+        <record id="group_darkweb_user" model="res.groups">
+            <field name="name">Dark Web User</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+
+    </data>
+</odoo>

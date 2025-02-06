@@ -1,0 +1,24 @@
+<odoo>
+    <record id="view_fbi_alerta" model="ir.ui.view">
+        <field name="name">fbi.alerta.form</field>
+        <field name="model">igb_darkweb.fbi_alerta</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button string="Cerrar" class="oe_highlight" special="cancel"/>
+                </header>
+                <sheet>
+                    <label for="mensaje"/>
+                    <field name="mensaje" readonly="1"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_fbi_alerta" model="ir.actions.act_window">
+        <field name="name">FBI Alert</field>
+        <field name="res_model">igb_darkweb.fbi_alerta</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

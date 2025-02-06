@@ -1,0 +1,37 @@
+<odoo>
+    <record id="action_hackers" model="ir.actions.act_window">
+        <field name="name">Hackers</field>
+        <field name="res_model">igb_darkweb.hacker</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_hackers_tree" model="ir.ui.view">
+        <field name="name">hackers.tree</field>
+        <field name="model">igb_darkweb.hacker</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="tarifa"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hackers_form" model="ir.ui.view">
+        <field name="name">hackers.form</field>
+        <field name="model">igb_darkweb.hacker</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="tarifa"/>
+                        <field name="trabaja_con_ids"/>
+                    </group>
+                    <footer>
+                        <button name="abrir_alerta_fbi" type="object" string="Contratar" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

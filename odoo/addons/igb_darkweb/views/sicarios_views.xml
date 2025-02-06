@@ -1,0 +1,37 @@
+<odoo>
+    <record id="action_sicarios" model="ir.actions.act_window">
+        <field name="name">Sicarios</field>
+        <field name="res_model">igb_darkweb.sicario</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_sicarios_tree" model="ir.ui.view">
+        <field name="name">sicarios.tree</field>
+        <field name="model">igb_darkweb.sicario</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="tarifa"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_sicarios_form" model="ir.ui.view">
+        <field name="name">sicarios.form</field>
+        <field name="model">igb_darkweb.sicario</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="tarifa"/>
+                        <field name="especialidad_ids"/>
+                    </group>
+                    <footer>
+                        <button name="abrir_alerta_fbi" type="object" string="Contratar" class="oe_highlight"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
