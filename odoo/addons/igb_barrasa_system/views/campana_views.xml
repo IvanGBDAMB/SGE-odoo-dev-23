@@ -17,12 +17,13 @@
         <field name="model">igb_barrasa_system.campana_espia</field>
         <field name="arch" type="xml">
             <form>
+            <!--
                 <header>
                     <button name="accion_abrir_modal"
                         string="Código a Inyectar"
                         type="object"
                         class="oe_highlight"/>
-                </header>
+                </header>-->
                 <sheet>
                     <group>
                         <field name="id" string="UID" readonly="1"/>

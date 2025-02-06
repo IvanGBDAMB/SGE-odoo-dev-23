@@ -30,11 +30,11 @@ Luego, estos datos pueden vincularse con clientes dentro de Odoo, proporcionando
 
     'images': ['static/description/icon.png'],
 
-    'assets': {
-        'web.assets_backend': [
-            'igb_barrasa_system/static/src/js/modal_personalizado.js',
-        ],
-    },
+    #'assets': {
+     #   'web.assets_backend': [
+      #      'igb_barrasa_system/static/src/js/modal_personalizado.js',
+       # ],
+    #},
 
 
 }
